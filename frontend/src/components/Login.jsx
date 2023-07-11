@@ -23,7 +23,7 @@ function Login() {
     event.preventDefault();
     
     
-    axios.post('https://notifyapp-2vld.onrender.com/login',{
+    axios.post('https://notify-backend-1nnf.onrender.com/login',{
       username,
       password,
     }).then(
