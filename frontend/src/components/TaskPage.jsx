@@ -17,7 +17,7 @@ const TasksPage = () => {
     
 
     
-    axios.get('https://notifyapp-2vld.onrender.com/api/tasks',{
+    axios.get('https://notify-backend-1nnf.onrender.com/api/tasks',{
         headers: {
             'x-token' : token
         }
@@ -70,7 +70,7 @@ const TasksPage = () => {
             'x-token' : token,
           };
         axios
-      .post('https://notifyapp-2vld.onrender.com/api/tasks', newTaskObj,{ headers })
+      .post('https://notify-backend-1nnf.onrender.com/api/tasks', newTaskObj,{ headers })
       .then((response) => {
        
         console.log(response.data);
@@ -101,7 +101,7 @@ const TasksPage = () => {
         'x-token' : token,
       };
     axios
-      .delete(`https://notifyapp-2vld.onrender.com/api/tasks/${taskId}`, {headers})
+      .delete(`https://notify-backend-1nnf.onrender.com/api/tasks/${taskId}`, {headers})
       .then((response) => {
         
         const updatedTasks = tasks.filter((task) => task.id !== taskId);
