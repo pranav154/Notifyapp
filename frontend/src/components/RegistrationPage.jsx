@@ -22,7 +22,7 @@ function RegistrationPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     try{
-        axios.post('https://notifyapp-2vld.onrender.com/api/register',{
+        axios.post('https://notify-backend-1nnf.onrender.com/api/register',{
             username:username,
             password:password,
             email: email
